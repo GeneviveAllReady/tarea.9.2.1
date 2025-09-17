@@ -30,8 +30,12 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
-            ]
+  "src/styles.scss",
+  "src/assets/css/styles.css"
+],
+"scripts": [
+  "src/assets/js/scripts.js"
+]
           },
           "configurations": {
             "production": {
@@ -88,11 +92,18 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
-            ]
+  "src/styles.scss",
+  "src/assets/css/styles.css"
+],
+"scripts": [
+  "src/assets/js/scripts.js"
+]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e8ab6240-6d5f-425c-9ea5-ccb7244169a3"
   }
 }
