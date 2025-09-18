@@ -1,12 +1,16 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { SkeletonComponent } from '@layout/skeleton/skeleton';
 
-@Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.scss'
+const routes: Routes = [
+  {
+    path: '',
+    component: SkeletonComponent
+  }
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes, {useHash: true})],
+  exports: [RouterModule]
 })
-export class App {
-  protected readonly title = signal('tarea.9.2.1');
-}
+export class AppRoutingModule { }
